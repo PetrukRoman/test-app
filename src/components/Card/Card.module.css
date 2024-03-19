@@ -1,0 +1,55 @@
+.card {
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+
+  cursor: pointer;
+}
+
+.imgContainer {
+  max-width: 200px;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+
+  aspect-ratio: 1 / 1;
+}
+.imgContainer img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.card h2 {
+  display: -webkit-box;
+  height: clamp(3.2rem, 2.997rem + 1.01vw, 4.2rem);
+  margin-bottom: 0.5rem;
+  overflow: hidden;
+
+  font-size: clamp(1.25rem, 1.199rem + 0.25vw, 1.5rem);
+  font-weight: 500;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.description {
+  height: clamp(2rem, 1.899rem + 0.51vw, 2.5rem);
+  overflow: hidden;
+  display: -webkit-box;
+  margin-bottom: 0.5rem;
+
+  font-size: clamp(0.8rem, 0.759rem + 0.2vw, 1rem);
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.price {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+.cta {
+  text-align: center;
+  margin-top: 1rem;
+}

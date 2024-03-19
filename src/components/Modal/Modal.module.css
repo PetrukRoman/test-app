@@ -1,0 +1,36 @@
+.modal {
+  position: relative;
+  margin: auto;
+  padding: 3rem;
+  border-radius: 10px;
+  border: none;
+}
+.closeBtn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0.5rem;
+  padding: 5px;
+  width: 24px;
+  height: 24px;
+  border: none;
+  background: none;
+
+  cursor: pointer;
+}
+.closeBtn img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+@media (max-width: 1024px) {
+  .modal {
+    padding: 1.5rem;
+  }
+  .closeBtn {
+    width: 20px;
+    height: 20px;
+  }
+}

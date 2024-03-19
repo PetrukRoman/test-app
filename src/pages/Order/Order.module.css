@@ -1,0 +1,46 @@
+.container {
+  max-width: var(--container-max-width);
+  margin: 3rem auto;
+  padding-inline: 2rem;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5rem;
+}
+.heading {
+  margin-bottom: 1.5rem;
+  font-size: clamp(1.25rem, 1.199rem + 0.25vw, 1.5rem);
+}
+.mealsContainer {
+  flex: 1 500px;
+}
+.mealsContainer ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.subTotalContainer {
+  flex: 1 350px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.cta {
+  text-align: center;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    margin: 1.5rem auto;
+    padding-inline: 1.5rem;
+  }
+}

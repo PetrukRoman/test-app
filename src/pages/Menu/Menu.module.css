@@ -1,0 +1,23 @@
+.container {
+  max-width: var(--container-max-width);
+  margin: 3rem auto;
+  padding-inline: 2rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  gap: 1rem;
+
+  list-style: none;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    margin: 1.5rem auto;
+    padding-inline: 1.5rem;
+  }
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+}

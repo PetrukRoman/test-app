@@ -1,0 +1,56 @@
+.control label {
+  display: block;
+  margin-bottom: 5px;
+
+  font-size: 1rem;
+}
+.selectWrapper {
+  position: relative;
+}
+.select {
+  min-width: 6rem;
+  width: 100%;
+  padding: 1rem 2.5rem 1rem 1.5rem;
+
+  border-radius: 10px;
+  border: 1px solid #9f9f9f;
+  appearance: none;
+  background-color: transparent;
+
+  color: inherit;
+  font-family: inherit;
+
+  font-size: clamp(1rem, 0.949rem + 0.25vw, 1.25rem);
+  cursor: pointer;
+}
+.select::-ms-expand {
+  display: none;
+}
+
+.selectWrapper::after {
+  content: "";
+  width: 0.8rem;
+  height: 0.8rem;
+
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+
+  background-image: url("../../assets/chevron-down.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  pointer-events: none;
+}
+.error {
+  border: 1px solid rgb(205, 61, 61);
+}
+.control span {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: rgb(199, 42, 42);
+
+  font-size: 0.8rem;
+  font-weight: 500;
+}

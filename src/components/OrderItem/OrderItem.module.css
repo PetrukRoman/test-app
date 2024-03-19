@@ -1,0 +1,43 @@
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 1rem;
+  gap: 1rem;
+  border-bottom: 1px solid rgb(216, 216, 216);
+}
+.imageContainer {
+  height: 100px;
+  aspect-ratio: 1 /1;
+}
+.imageContainer img {
+  height: 100%;
+  width: 100%;
+  display: block;
+  object-fit: contain;
+}
+.card h2 {
+  display: -webkit-box;
+  height: clamp(2.2rem, 1.937rem + 1.32vw, 3.5rem);
+  overflow: hidden;
+
+  font-size: clamp(1rem, 0.959rem + 0.2vw, 1.2rem);
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.descriptionContainer {
+  flex: 1 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+.price {
+  font-size: clamp(0.8rem, 0.719rem + 0.41vw, 1.2rem);
+  font-weight: 600;
+}
+.counterContainer {
+  flex: 1;
+  align-self: center;
+  margin-left: auto;
+}

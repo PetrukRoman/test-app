@@ -1,0 +1,20 @@
+.login h2 {
+  font-size: clamp(1rem, 0.899rem + 0.51vw, 1.5rem);
+  margin-bottom: 1.5rem;
+}
+.login form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 0.5rem;
+}
+.cta,
+.center {
+  text-align: center;
+}
+
+@media (max-width: 1024px) {
+  .form {
+    gap: 15px;
+  }
+}

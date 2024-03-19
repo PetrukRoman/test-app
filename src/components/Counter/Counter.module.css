@@ -1,0 +1,29 @@
+.counter {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border: 1px solid var(--font-color-accent);
+  border-radius: 50px;
+}
+.counter span {
+  font-size: clamp(0.7rem, 0.639rem + 0.3vw, 1rem);
+  font-weight: 500;
+}
+.counter button {
+  padding: 0.8rem 1.6rem;
+  border: none;
+  background: none;
+
+  color: inherit;
+  font-size: clamp(0.7rem, 0.639rem + 0.3vw, 1rem);
+
+  font-family: inherit;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+.counter button:active {
+  color: var(--font-color-accent);
+  transform: scale(1.5);
+}
